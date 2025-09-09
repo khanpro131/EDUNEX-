@@ -135,6 +135,7 @@
         <a href="#">My Schedule</a>
         <a href="#">Request Change</a>
         <a href="#">Cancel Class</a>
+        <a href="#">request leave</a>
       </div>
       <div id="student-menu" style="display:none;">
         <a href="#">Today’s Classes</a>
@@ -179,12 +180,24 @@
 
       <!-- Example content for faculty -->
       <div class="card-box" id="faculty-schedule" style="display:none;">
-        <h3>Today's Classes</h3>
-        <table>
-          <tr><th>Time</th><th>Subject</th><th>Class</th><th>Status</th></tr>
-          <tr><td>9:00 - 10:00</td><td>Physics</td><td>10A</td><td><button>Mark Done</button></td></tr>
-          <tr><td>10:00 - 11:00</td><td>Chemistry</td><td>10B</td><td><button>Mark Done</button></td></tr>
-        </table>
+       <h3>Today's Schedule</h3>
+        <div class="schedule-grid">
+          <div class="subject-card">
+            <h4>Physics</h4>
+            <p><strong>Time:</strong> 9:00 - 10:00 AM</p>
+            <span class="status running">Running</span>
+          </div>
+          <div class="subject-card">
+            <h4>Maths</h4>
+            <p><strong>Time:</strong> 10:00 - 11:00 AM</p>
+            <span class="status upcoming">Upcoming</span>
+          </div>
+          <div class="subject-card">
+            <h4>Chemistry</h4>
+            <p><strong>Time:</strong> 11:00 - 12:00 PM</p>
+            <span class="status done">Done</span>
+          </div>
+        </div>
       </div>
 
       <!-- Example content for management -->
